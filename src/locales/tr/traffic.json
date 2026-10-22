@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Trafik"
+  },
+  "range": {
+    "today": "Bugün",
+    "week": "Son 7 gün",
+    "month": "Son 30 gün"
+  },
+  "summary": {
+    "today": "Bugün",
+    "week": "Son 7 gün",
+    "month": "Son 30 gün",
+    "session": "Bu oturum"
+  },
+  "status": {
+    "active": "{{count}} etkin",
+    "offline": "Bağlı değil"
+  },
+  "chart": {
+    "title": "Günlük trafik"
+  },
+  "dimension": {
+    "process": "Süreç",
+    "rule": "Kural",
+    "proxy": "Proxy",
+    "host": "Sunucu"
+  },
+  "table": {
+    "name": "Ad",
+    "upload": "Yükleme",
+    "download": "İndirme",
+    "total": "Toplam",
+    "connections": "Bağlantı",
+    "share": "Oran"
+  },
+  "empty": {
+    "title": "Henüz trafik verisi yok",
+    "description": "Clash Verge çalışırken trafik kural, süreç, proxy ve sunucuya göre toplanır.",
+    "processHint": "Süreç başına istatistik için çekirdek yapılandırmasında \"find-process-mode: always\" gerekir."
+  },
+  "actions": {
+    "clear": "İstatistikleri temizle",
+    "clearTitle": "Trafik istatistikleri temizlensin mi?",
+    "clearDescription": "Kaydedilen tüm trafik geçmişi silinecek. Bu işlem geri alınamaz.",
+    "clearConfirm": "Temizle"
+  },
+  "misc": {
+    "unknown": "Bilinmiyor",
+    "other": "Diğer"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "トラフィック"
+  },
+  "range": {
+    "today": "今日",
+    "week": "過去 7 日間",
+    "month": "過去 30 日間"
+  },
+  "summary": {
+    "today": "今日",
+    "week": "過去 7 日間",
+    "month": "過去 30 日間",
+    "session": "今回のセッション"
+  },
+  "status": {
+    "active": "{{count}} 件の接続",
+    "offline": "未接続"
+  },
+  "chart": {
+    "title": "日別トラフィック"
+  },
+  "dimension": {
+    "process": "プロセス",
+    "rule": "ルール",
+    "proxy": "プロキシ",
+    "host": "ホスト"
+  },
+  "table": {
+    "name": "名前",
+    "upload": "アップロード",
+    "download": "ダウンロード",
+    "total": "合計",
+    "connections": "接続数",
+    "share": "割合"
+  },
+  "empty": {
+    "title": "トラフィックデータがありません",
+    "description": "Clash Verge の実行中にルール・プロセス・プロキシ・ホスト別に集計されます。",
+    "processHint": "プロセス別の集計にはコア設定で \"find-process-mode: always\" が必要です。"
+  },
+  "actions": {
+    "clear": "統計を消去",
+    "clearTitle": "トラフィック統計を消去しますか？",
+    "clearDescription": "記録済みのトラフィック履歴はすべて削除され、元に戻せません。",
+    "clearConfirm": "消去"
+  },
+  "misc": {
+    "unknown": "不明",
+    "other": "その他"
+  }
+}

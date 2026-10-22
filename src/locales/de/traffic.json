@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Traffic"
+  },
+  "range": {
+    "today": "Heute",
+    "week": "Letzte 7 Tage",
+    "month": "Letzte 30 Tage"
+  },
+  "summary": {
+    "today": "Heute",
+    "week": "Letzte 7 Tage",
+    "month": "Letzte 30 Tage",
+    "session": "Diese Sitzung"
+  },
+  "status": {
+    "active": "{{count}} aktiv",
+    "offline": "Nicht verbunden"
+  },
+  "chart": {
+    "title": "Täglicher Traffic"
+  },
+  "dimension": {
+    "process": "Prozess",
+    "rule": "Regel",
+    "proxy": "Proxy",
+    "host": "Host"
+  },
+  "table": {
+    "name": "Name",
+    "upload": "Upload",
+    "download": "Download",
+    "total": "Gesamt",
+    "connections": "Verbindungen",
+    "share": "Anteil"
+  },
+  "empty": {
+    "title": "Noch keine Traffic-Daten",
+    "description": "Traffic wird während der Laufzeit von Clash Verge nach Regel, Prozess, Proxy und Host summiert.",
+    "processHint": "Statistik pro Prozess erfordert \"find-process-mode: always\" in der Kernkonfiguration."
+  },
+  "actions": {
+    "clear": "Statistik löschen",
+    "clearTitle": "Traffic-Statistik löschen?",
+    "clearDescription": "Der gesamte aufgezeichnete Traffic-Verlauf wird gelöscht. Das kann nicht rückgängig gemacht werden.",
+    "clearConfirm": "Löschen"
+  },
+  "misc": {
+    "unknown": "Unbekannt",
+    "other": "Sonstige"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Trafik"
+  },
+  "range": {
+    "today": "Hari ini",
+    "week": "7 hari terakhir",
+    "month": "30 hari terakhir"
+  },
+  "summary": {
+    "today": "Hari ini",
+    "week": "7 hari terakhir",
+    "month": "30 hari terakhir",
+    "session": "Sesi ini"
+  },
+  "status": {
+    "active": "{{count}} aktif",
+    "offline": "Tidak terhubung"
+  },
+  "chart": {
+    "title": "Trafik harian"
+  },
+  "dimension": {
+    "process": "Proses",
+    "rule": "Aturan",
+    "proxy": "Proksi",
+    "host": "Host"
+  },
+  "table": {
+    "name": "Nama",
+    "upload": "Unggah",
+    "download": "Unduh",
+    "total": "Total",
+    "connections": "Koneksi",
+    "share": "Porsi"
+  },
+  "empty": {
+    "title": "Belum ada data trafik",
+    "description": "Trafik dijumlahkan per aturan, proses, proksi, dan host selama Clash Verge berjalan.",
+    "processHint": "Statistik per proses memerlukan \"find-process-mode: always\" pada konfigurasi inti."
+  },
+  "actions": {
+    "clear": "Hapus statistik",
+    "clearTitle": "Hapus statistik trafik?",
+    "clearDescription": "Seluruh riwayat trafik yang tercatat akan dihapus dan tidak dapat dibatalkan.",
+    "clearConfirm": "Hapus"
+  },
+  "misc": {
+    "unknown": "Tidak diketahui",
+    "other": "Lainnya"
+  }
+}

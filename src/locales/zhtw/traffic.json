@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "流量"
+  },
+  "range": {
+    "today": "今天",
+    "week": "近 7 天",
+    "month": "近 30 天"
+  },
+  "summary": {
+    "today": "今天",
+    "week": "近 7 天",
+    "month": "近 30 天",
+    "session": "本次工作階段"
+  },
+  "status": {
+    "active": "{{count}} 個使用中連線",
+    "offline": "未連線"
+  },
+  "chart": {
+    "title": "每日流量"
+  },
+  "dimension": {
+    "process": "程式",
+    "rule": "規則",
+    "proxy": "代理",
+    "host": "主機"
+  },
+  "table": {
+    "name": "名稱",
+    "upload": "上傳",
+    "download": "下載",
+    "total": "合計",
+    "connections": "連線",
+    "share": "佔比"
+  },
+  "empty": {
+    "title": "尚無流量資料",
+    "description": "Clash Verge 執行期間會依規則、程式、代理與主機彙總流量。",
+    "processHint": "依程式統計需要於核心設定啟用 \"find-process-mode: always\"。"
+  },
+  "actions": {
+    "clear": "清除統計",
+    "clearTitle": "清除流量統計？",
+    "clearDescription": "所有已記錄的流量歷史將被刪除，此操作無法復原。",
+    "clearConfirm": "清除"
+  },
+  "misc": {
+    "unknown": "未知",
+    "other": "其他"
+  }
+}

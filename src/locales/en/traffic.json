@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Traffic"
+  },
+  "range": {
+    "today": "Today",
+    "week": "Last 7 days",
+    "month": "Last 30 days"
+  },
+  "summary": {
+    "today": "Today",
+    "week": "Last 7 days",
+    "month": "Last 30 days",
+    "session": "This session"
+  },
+  "status": {
+    "active": "{{count}} active",
+    "offline": "Not connected"
+  },
+  "chart": {
+    "title": "Daily traffic"
+  },
+  "dimension": {
+    "process": "Process",
+    "rule": "Rule",
+    "proxy": "Proxy",
+    "host": "Host"
+  },
+  "table": {
+    "name": "Name",
+    "upload": "Upload",
+    "download": "Download",
+    "total": "Total",
+    "connections": "Conn.",
+    "share": "Share"
+  },
+  "empty": {
+    "title": "No traffic data yet",
+    "description": "Traffic is summed by rule, process, proxy and host while Clash Verge is running.",
+    "processHint": "Per-process statistics require \"find-process-mode: always\" in the core configuration."
+  },
+  "actions": {
+    "clear": "Clear statistics",
+    "clearTitle": "Clear traffic statistics?",
+    "clearDescription": "All recorded traffic history will be deleted. This cannot be undone.",
+    "clearConfirm": "Clear"
+  },
+  "misc": {
+    "unknown": "Unknown",
+    "other": "Other"
+  }
+}

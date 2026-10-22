@@ -16,6 +16,7 @@ import ProxiesSvg from '@/assets/image/itemicon/proxies.svg?react'
 import RulesSvg from '@/assets/image/itemicon/rules.svg?react'
 import SettingsSvg from '@/assets/image/itemicon/settings.svg?react'
 import UnlockSvg from '@/assets/image/itemicon/unlock.svg?react'
+import { trafficPlugin } from '@/plugins'
 
 import { navigationItems } from './_navigation-meta'
 import ConnectionsPage from './connections'
@@ -64,6 +65,11 @@ export const navItems: NavigationItem[] = [
     ...navigationItems.logs,
     icon: [<SubjectOutlinedIcon key="mui" />, <LogsSvg key="svg" />],
     Component: LogsPage,
+  },
+  {
+    ...navigationItems.traffic,
+    icon: trafficPlugin.icons,
+    Component: trafficPlugin.Component,
   },
   {
     ...navigationItems.unlock,

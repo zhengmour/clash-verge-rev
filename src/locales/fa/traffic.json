@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "ترافیک"
+  },
+  "range": {
+    "today": "امروز",
+    "week": "۷ روز گذشته",
+    "month": "۳۰ روز گذشته"
+  },
+  "summary": {
+    "today": "امروز",
+    "week": "۷ روز گذشته",
+    "month": "۳۰ روز گذشته",
+    "session": "این نشست"
+  },
+  "status": {
+    "active": "{{count}} فعال",
+    "offline": "متصل نیست"
+  },
+  "chart": {
+    "title": "ترافیک روزانه"
+  },
+  "dimension": {
+    "process": "فرایند",
+    "rule": "قاعده",
+    "proxy": "پروکسی",
+    "host": "میزبان"
+  },
+  "table": {
+    "name": "نام",
+    "upload": "ارسال",
+    "download": "دریافت",
+    "total": "مجموع",
+    "connections": "اتصال‌ها",
+    "share": "سهم"
+  },
+  "empty": {
+    "title": "هنوز داده ترافیکی نیست",
+    "description": "ترافیک هنگام اجرای Clash Verge بر پایه قاعده، فرایند، پروکسی و میزبان جمع می‌شود.",
+    "processHint": "آمار به تفکیک فرایند به \"find-process-mode: always\" در پیکربندی هسته نیاز دارد."
+  },
+  "actions": {
+    "clear": "پاک کردن آمار",
+    "clearTitle": "آمار ترافیک پاک شود؟",
+    "clearDescription": "تمام تاریخچه ترافیک ثبت‌شده حذف می‌شود و قابل بازگشت نیست.",
+    "clearConfirm": "پاک کردن"
+  },
+  "misc": {
+    "unknown": "ناشناخته",
+    "other": "دیگر"
+  }
+}

@@ -1605,5 +1605,57 @@ export interface TranslationResources {
         }
       }
     }
+    traffic: {
+      actions: {
+        clear: string
+        clearConfirm: string
+        clearDescription: string
+        clearTitle: string
+      }
+      chart: {
+        title: string
+      }
+      dimension: {
+        host: string
+        process: string
+        proxy: string
+        rule: string
+      }
+      empty: {
+        description: string
+        processHint: string
+        title: string
+      }
+      misc: {
+        other: string
+        unknown: string
+      }
+      page: {
+        title: string
+      }
+      range: {
+        month: string
+        today: string
+        week: string
+      }
+      status: {
+        active: string
+        offline: string
+      }
+      summary: {
+        month: string
+        session: string
+        today: string
+        week: string
+      }
+      table: {
+        connections: string
+        download: string
+        name: string
+        share: string
+        total: string
+        upload: string
+      }
+    }
   }
 }

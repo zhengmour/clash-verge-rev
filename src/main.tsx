@@ -11,6 +11,7 @@ import { MihomoWebSocket } from 'tauri-plugin-mihomo-api'
 import { BaseErrorBoundary } from './components/base'
 import { router } from './pages/_routers'
 import { preloadHomePageCards } from './pages/home'
+import { startPlugins } from './plugins'
 import { AppDataProvider } from './providers/app-data-provider'
 import { WindowProvider } from './providers/window'
 import { FALLBACK_LANGUAGE, initializeLanguage } from './services/i18n'
@@ -38,6 +39,8 @@ if (!container) {
 disableWebViewShortcuts()
 
 const initializeApp = (initialThemeMode: 'light' | 'dark') => {
+  startPlugins()
+
   const contexts = [
     <ThemeModeProvider key="theme" initialState={initialThemeMode} />,
     <AppStoreProvider key="app-store" />,

@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Tráfego"
+  },
+  "range": {
+    "today": "Hoje",
+    "week": "Últimos 7 dias",
+    "month": "Últimos 30 dias"
+  },
+  "summary": {
+    "today": "Hoje",
+    "week": "Últimos 7 dias",
+    "month": "Últimos 30 dias",
+    "session": "Esta sessão"
+  },
+  "status": {
+    "active": "{{count}} ativas",
+    "offline": "Sem conexão"
+  },
+  "chart": {
+    "title": "Tráfego diário"
+  },
+  "dimension": {
+    "process": "Processo",
+    "rule": "Regra",
+    "proxy": "Proxy",
+    "host": "Host"
+  },
+  "table": {
+    "name": "Nome",
+    "upload": "Envio",
+    "download": "Recebimento",
+    "total": "Total",
+    "connections": "Conexões",
+    "share": "Participação"
+  },
+  "empty": {
+    "title": "Ainda sem dados de tráfego",
+    "description": "O tráfego é somado por regra, processo, proxy e host enquanto o Clash Verge está em execução.",
+    "processHint": "A estatística por processo requer \"find-process-mode: always\" na configuração do núcleo."
+  },
+  "actions": {
+    "clear": "Limpar estatísticas",
+    "clearTitle": "Limpar as estatísticas de tráfego?",
+    "clearDescription": "Todo o histórico de tráfego registrado será excluído. Não é possível desfazer.",
+    "clearConfirm": "Limpar"
+  },
+  "misc": {
+    "unknown": "Desconhecido",
+    "other": "Outros"
+  }
+}

@@ -1,3 +1,5 @@
+import { trafficPlugin } from '@/plugins'
+
 export const navigationItems = {
   home: { label: 'layout.components.navigation.tabs.home', path: '/' },
   proxies: {
@@ -22,4 +24,5 @@ export const navigationItems = {
     label: 'layout.components.navigation.tabs.settings',
     path: '/settings',
   },
+  traffic: { label: trafficPlugin.navLabel, path: trafficPlugin.path },
 } as const
