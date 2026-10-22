@@ -56,7 +56,7 @@ Go to the [Release page](https://github.com/zhengmour/clash-verge-rev/releases) 
 
 | 文件                           | 说明                                                             |
 | ------------------------------ | ---------------------------------------------------------------- |
-| `Clash Verge_*_x64-setup.exe`  | NSIS 安装包，创建开始菜单/桌面快捷方式，可安装系统服务             |
+| `Clash.Verge_*_x64-setup.exe`  | NSIS 安装包，创建开始菜单/桌面快捷方式，可安装系统服务             |
 | `clash-verge.exe`              | 免安装的可执行文件，解压后直接运行，不写入卸载信息                 |
 
 Supports Windows (x64/x86), Linux (x64/arm64) and macOS 11+ (intel/apple) when built from source.
