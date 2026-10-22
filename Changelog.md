@@ -1,3 +1,12 @@
+## v2.5.9-traffic
+
+<details>
+<summary><strong> ✨ 新增功能 </strong></summary>
+
+- 新增「Traffic 流量统计」页面：按进程、规则、代理链和域名统计流量，支持今日/近 7 天/近 30 天排行与每日图表，历史按天保存在本机
+
+</details>
+
 ## v2.5.9
 
 <details>

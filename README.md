@@ -10,6 +10,11 @@ A Clash Meta GUI based on <a href="https://github.com/tauri-apps/tauri">Tauri</a
 </h3>
 
 <p align="center">
+  本仓库是 <a href="https://github.com/clash-verge-rev/clash-verge-rev">Clash Verge Rev</a> 的个人分支，
+  额外内置了「Traffic 流量统计」页面。
+</p>
+
+<p align="center">
   Languages:
   <a href="./docs/README_en.md">English</a> ·
   <a href="./docs/README_es.md">Español</a> ·
@@ -27,20 +32,44 @@ A Clash Meta GUI based on <a href="https://github.com/tauri-apps/tauri">Tauri</a
 | -------------------------------- | --------------------------------- |
 | ![预览](./docs/preview_dark.png) | ![预览](./docs/preview_light.png) |
 
+## Traffic 流量统计
+
+侧边栏「日志」之后新增的 **Traffic** 页面，把内核 `/connections` 的数据拆成四个维度，回答「流量到底花在谁身上」：
+
+| 维度   | 说明                       |
+| ------ | -------------------------- |
+| 进程   | 按发起连接的应用统计       |
+| 规则   | 按命中的规则统计           |
+| 代理链 | 按实际使用的代理节点/链路   |
+| 域名   | 按目标主机统计             |
+
+- 今日 / 近 7 天 / 近 30 天切换，每个维度都有上传、下载、总量与连接数排行，支持关键字过滤
+- 页面顶部是今日 / 近 7 天 / 近 30 天 / 本次运行的总量卡片，下面是每日流量柱状图
+- 历史按天记录并保存在本机 `localStorage`（保留 30 天），不会上传到任何服务器；可以在页面上清空
+- 进程维度依赖内核的进程识别：到「设置 → Clash 内核 → 查找进程模式」选择 `always`（或在配置里写 `find-process-mode: always`），否则该维度只显示「未知」
+
 ## Install
 
-请到发布页面下载对应的安装包：[Release page](https://github.com/clash-verge-rev/clash-verge-rev/releases)<br>
-Go to the [Release page](https://github.com/clash-verge-rev/clash-verge-rev/releases) to download the corresponding installation package<br>
-Supports Windows (x64/x86), Linux (x64/arm64) and macOS 11+ (intel/apple).
-支持 Windows (x64/x86)、Linux (x64/arm64) 和 macOS 11+ (intel/apple)。
+请到本仓库的发布页面下载对应的安装包：[Release page](https://github.com/zhengmour/clash-verge-rev/releases)<br>
+Go to the [Release page](https://github.com/zhengmour/clash-verge-rev/releases) to download the corresponding installation package<br>
+本分支当前只发布 Windows x64 构建，每个版本提供两个文件（This branch publishes Windows x64 builds only, two files per release）：
+
+| 文件                           | 说明                                                             |
+| ------------------------------ | ---------------------------------------------------------------- |
+| `Clash Verge_*_x64-setup.exe`  | NSIS 安装包，创建开始菜单/桌面快捷方式，可安装系统服务             |
+| `clash-verge.exe`              | 免安装的可执行文件，解压后直接运行，不写入卸载信息                 |
+
+Supports Windows (x64/x86), Linux (x64/arm64) and macOS 11+ (intel/apple) when built from source.
+源码支持 Windows (x64/x86)、Linux (x64/arm64) 和 macOS 11+ (intel/apple)。
 
 #### 我应当怎样选择发行版
 
-| 版本        | 特征                                     | 链接                                                                                   |
-| :---------- | :--------------------------------------- | :------------------------------------------------------------------------------------- |
-| Stable      | 正式版，高可靠性，适合日常使用。         | [Release](https://github.com/clash-verge-rev/clash-verge-rev/releases)                 |
-| Alpha(废弃) | 测试发布流程。                           | [Alpha](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/alpha)         |
-| AutoBuild   | 滚动更新版，适合测试反馈，可能存在缺陷。 | [AutoBuild](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/autobuild) |
+本分支只提供手动构建的版本，没有 Alpha / AutoBuild 通道；上游的稳定版、Alpha 和 AutoBuild 请到
+[Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev/releases) 获取。
+
+| 版本            | 特征                                   | 链接                                                                            |
+| :-------------- | :------------------------------------- | :------------------------------------------------------------------------------ |
+| Traffic 构建    | 上游最新 `dev` 加内置 Traffic 页面。   | [Release](https://github.com/zhengmour/clash-verge-rev/releases)                 |
 
 #### 安装说明和常见问题，请到 [文档页](https://clash-verge-rev.github.io/) 查看
 
@@ -87,6 +116,7 @@ Supports Windows (x64/x86), Linux (x64/arm64) and macOS 11+ (intel/apple).
 - 系统代理和守卫、`TUN(虚拟网卡)` 模式。
 - 可视化节点和规则编辑
 - WebDav 配置备份和同步
+- **Traffic 流量统计**：按进程 / 规则 / 代理链 / 域名统计流量，保留 30 天按天历史（本分支内置）
 
 ### FAQ
 
@@ -114,7 +144,11 @@ uninstalled and the app starts in Sidecar mode. Use `pnpm dev:service` to
 explicitly install or update the isolated development service before launch,
 or `pnpm dev:sidecar` to force the unprivileged Sidecar workflow.
 
-## Contributions
+## Contributors
+
+- [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) 的维护者与所有贡献者：本分支的全部基础功能来自上游
+- DaXia ([@zhengmour](https://github.com/zhengmour))：本分支维护者，提出「Traffic 流量统计」需求并验收
+- DeepSeek Harness（deepseek-flash）：AI 编程助手，参与实现「Traffic 流量统计」页面、插件注入脚本与 Windows 构建脚本
 
 Issue and PR welcome!
 
@@ -122,6 +156,8 @@ Issue and PR welcome!
 
 Clash Verge rev was based on or inspired by these projects and so on:
 
+- [clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev): 本仓库的上游，Clash Verge Rev 的全部基础功能由它提供。
+- [lufficc/clash-traffic](https://github.com/lufficc/clash-traffic): 独立的多设备流量统计应用；本分支「Traffic」页面的信息结构与交互参考了它，页面本身是在本项目内重新实现的 React 组件。
 - [zzzgydi/clash-verge](https://github.com/zzzgydi/clash-verge): A Clash GUI based on tauri. Supports Windows, macOS and Linux.
 - [tauri-apps/tauri](https://github.com/tauri-apps/tauri): Build smaller, faster, and more secure desktop applications with a web frontend.
 - [Dreamacro/clash](https://github.com/Dreamacro/clash): A rule-based tunnel in Go.
